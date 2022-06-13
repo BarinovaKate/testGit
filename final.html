@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final project</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: #f82121;
+            margin-bottom: 10px;
+        }
+        .signature {
+            text-align: right;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 0;
+        }
+        h2 {
+            text-align: center;
+            padding: 15px;
+            font-size: 25px;
+            font-weight: lighter;
+            border-radius: 4px;
+            color: black;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+            border: 3px solid #dbdada;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 16px;
+            margin: 20px 0 10px;
+        }
+        .text {
+            color: white;
+        
+        }
+
+        .wikipedia {
+            text-decoration: none;
+            color: #dbdada;
+            font-size: 14px;
+        }
+
+        .wikipedia:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            display: block;
+            margin: 30px auto;
+            background-color: white;
+            color: #f82121;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0 0.1);
+            transition: all 200ms ease-in-out;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+            background-color: #f82121;
+            color: white;
+        }
+
+        .footer {
+            text-align: center;
+            color: #dbdada;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 60px;
+            background: linear-gradient(#dbdada, #f87676);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+        Mikhail Bulgakov <br/>
+        "The Master and Margarita"
+        </h1>
+        <p class="signature">
+         <em>Manuscripts do not burn</em>
+         <hr />   
+        </p>
+        <h2>
+            What is the meaning of the work <br/> "The Master and Margarita"?
+        </h2>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/442/original/zyro-image.png?1651662926"
+            alt="Greek Yogurt" width="400">
+        <p>
+            M. A. Bulgakov in his work raises many topics that have been troubling all mankind for centuries. But he presents them
+            in an unusual format, expressing the new meaning of  "The Master and Margarita". This is a novel about <span class="text" >good and evil</span> in
+            their various manifestations. It would seem that in a work with such a complex structure lies a lot of meanings. But, if
+            you draw a general line, you can see that all the topics raised by Bulgakov are about <span class="text">the confrontation</span> between good and
+            evil.
+        </p>
+        <a target="_blank" href="https://obrazovaka.ru/sochinenie/master-i-margarita/smysl-sut-romana.html" class="wikipedia"> 
+        <strong>Read more👀</strong> 
+        </a>
+        <button>
+            📖 Buy Book
+        </button>
+        <p class="footer">
+            This page was built by <a class="wikipedia" target="_blank" href="https://www.instagram.com/katerina_barinova.ks/" >Kate
+                Barinova</a>
+        </p>
+    </div>
+    <script>
+        function buy() {
+            let name = prompt("Hello! What is your name?");
+            let discountCard = prompt( name + ", how much is this purchase in our store?");
+        
+            if (discountCard >= 1 && discountCard <= 3 ) {
+                alert("Fine! " + name + ", we are giving you a 10% discount on this book!");
+            } else if (discountCard >= 4 ) { 
+                alert("Fine! " + name + ", we are giving you a 30 % discount on this book!");
+            }
+        }
+        let buyButton = document.querySelector("button");
+            buyButton.addEventListener("click", buy);
+    </script>
+
+</body>
+
+</html>
