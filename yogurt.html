@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek yogurt🥛</title>
+    <style>
+h1 {
+    text-align: center;
+    color: #7d51e8;
+}
+h2 {
+    text-align: center;
+    border: 1px solid #7d51e8;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+p {
+  line-height: 1.5; 
+  font-size: 13px; 
+  margin: 20px 0 10px;
+}
+.wikipedia {
+  text-decoration: none;
+  color: #7d51e8;
+  font-size: 12px;
+}
+.wikipedia:hover {
+    text-decoration: underline;
+}
+button {
+    display: block;
+    margin: 20px auto;
+    background-color: #7d51e8;
+    color: white;
+    font-size: 18px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0 0.1);
+    transition: all 200ms ease-in-out;
+}
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.footer {
+    text-align: center;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 60px;
+}
+    </style>
+</head>
+<body>
+    <div class="container" >
+    <h1>
+       I love Yogurt  
+    </h1>
+    <h2>
+        Especially Greek Yogurt
+    </h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/371/original/homemade-greek-yogurt-copy-720x477.jpeg?1651583123" alt="Greek Yogurt" width="400">
+<p>
+    Strained yogurt, Greek yogurt, yogurt cheese, sack yogurt, or kerned yogurt is yogurt that has been strained to
+    remove most of its whey, resulting in a thicker consistency than normal unstrained yogurt, while still preserving the
+    distinctive sour taste of yogurt. Like many types, strained yogurt is often made from milk enriched by boiling off some
+    water content, or by adding extra butterfat and powdered milk. In Europe and North America, it is often made from
+    low-fat or fat-free cow's milk. In Iceland, a similar product named skyr is made.
+</p>
+<a target="_blank" href="http://en.wikipedia.org/wiki/Strained_yogurt" class="wikipedia">Learn more on Wikipedia</a>
+<button>
+    👉Buy Greek Yogurt
+</button>
+<p class="footer">
+    This page was built by <a target="_blank" href="https://www.instagram.com/katerina_barinova.ks/">Kate Barinova</a> 
+</p>
+</div>
+<script>
+    function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favorite emoji?");
+        
+        alert("Thank you, " + name + "! We`ll be in touch by email, meanwhile have lot of Yogurt! " + emoji);
+    }
+let buyButton = document.querySelector("button");
+    buyButton.addEventListener("click", buy);
+</script>
+
+
+</body>
+</html>
